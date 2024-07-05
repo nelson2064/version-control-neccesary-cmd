@@ -1,0 +1,61 @@
+git clone url
+git add .
+git commit -m "commited"
+git push -u origin main
+
+
+git remote add upstream mainprojecturl
+
+
+git init
+git add .
+git commit -m "commited"
+git remote add origin url
+git push -u origin main
+
+
+
+
+git branch
+git branch -M main > to change name
+git checkout branchname
+git checkout -b branchname
+git branch -d branchname
+git merge  name of the branch that you want to merge into the curent branch where you are running code
+pull request or mege request > while contribution to any porject for specific solutioo bug code create a new branch anad make changes on that and ask for pull reque / merge request
+
+
+
+git pull-r > rebase if a developer have arleady pushed in a central repostiory and if you hav already comited and want to push you cannot push so before pushing pull by -rebase this make sure your commit will come after that devloper commit
+.............merge confilcit can occur handle it manually if the one devloper commit to the same file you have commited on same line this can occur.............
+
+
+.gitignore
+git rm -rf --cached filename > removeing from the git chaced so it will remove this file from the databse if it it have tracked this file
+
+
+git stash
+git checkout branchname > and then you are able to move to other branch 
+git stash pop
+
+
+
+git checkout commithash > this wil take you to that version of the code repo temporalriy
+git checkout -b newbranch > you can create a new branch based on that version
+
+
+git reset > remove from staging are and bring backs to untracked or modified stage
+git reset HEAD~1 > remove from commit mode and bring backs to untracked or modified stage
+git reset commithash > remove form commit mode and bring back to untracked or modified stage
+git reset --hard commithash > remove from commit as weel as remoe all code that you have writeen think before doing this
+git reset --hard HEAD~2
+git reset --soft HEAD~2
+git push --force  > removing the remote commit as well
+>>>>>>>>>>you shouldn't directly remove the commit in remote repo>>>>>>>>>>>> therefor we use revert 
+git revert commithas > create a new commit on top of the commit which you want to remove that commit also remains so because of revert other devloper don't phase problem in their local code base because we dont' remover or rest the commit instaead we put a comit that remove all changes that we want to remove
+git push
+
+
+
+git add .
+git commit --amend > coomit into last commit
